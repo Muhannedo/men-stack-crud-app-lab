@@ -6,24 +6,23 @@ body {
   padding: 0;
 }
 
-/* Header and titles */
+
 h1 {
   text-align: center;
-  color: #2196F3; /* Blue color for car headers */
+  color: #2196F3; 
   margin-top: 20px;
 }
 
-/* Links */
 a {
   text-decoration: none;
-  color: #4CAF50; /* Green color for links */
+  color: #4CAF50; 
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Container for checkbox and form sections */
+
 .checkbox-div {
   text-align: center;
   margin-top: 20px;
@@ -33,17 +32,16 @@ a:hover {
   display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: #2196F3; /* Blue background for buttons */
+  background-color: #2196F3; 
   color: white;
   border-radius: 5px;
   text-align: center;
 }
 
 .edit-link:hover, .add-car:hover, .cars-index-link:hover {
-  background-color: #1976D2; /* Darker blue on hover */
+  background-color: #1976D2; 
 }
 
-/* Form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -65,11 +63,11 @@ input[type="checkbox"] {
   width: 200px;
 }
 
-/* Button styling */
+
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #4CAF50; /* Green button */
+  background-color: #4CAF50; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -77,10 +75,10 @@ button {
 }
 
 button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
 }
 
-/* List styling */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -108,4 +106,6 @@ footer {
 .c63{
 width: 450px;
 height: 450px;
+align-items: center;
+border-radius: 15px;
 }
