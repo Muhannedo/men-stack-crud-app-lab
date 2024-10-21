@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit a car</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <a class="cars-index-link" href="/cars">
+      <div class="index-link-text">Back to Cars</div>
+    </a>
+    <!-- update the header -->
+    <h1>Edit <%= car.brand %></h1>
+    <!-- updated form -->
+    <form action="/cars/<%=car._id%>?_method=PUT" method="POST">
+      <label for="brand">Brand:</label>
+      <input type="text" name="brand" value="<%= car.brand %>" />
+
+      <label for="colorName">Color Name:</label>
+      <input type="text" name="colorName" value="<%= car.colorName %>" />
+
+      <label for="price">Price:</label>
+      <input type="number" name="price" value="<%= car.price %>" />
+
+      <div class="checkbox-div">
+        <label for="is-tuned">Tuned?</label>
+        <input type="checkbox" name="isTuned" id="is-tuned" />
+      </div>
+
+      <button type="submit">Update Car</button>
+    </form>
+  </body>
+</html>

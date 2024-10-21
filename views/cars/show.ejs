@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= car.name %></title>
+    <!-- Dynamic title based on fruit name -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="checkbox-div">
+      <h1><%= car.brand %></h1>
+      <% if (car.isTuned) { %>
+      <p>This car is tuned!</p>
+      <% } else { %>
+      <p>This car is not tuned!</p>
+      <% } %>
+
+      <a class="edit-link" href="/cars/<%= car._id %>/edit">
+        <div class="edit-text">Edit <%= car.brand %></div>
+      </a>
+
+      <form action="/cars/<%= car._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= car.brand %></button>
+      </form>
+    </div>
+  </body>
+</html>
