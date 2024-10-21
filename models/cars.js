@@ -4,11 +4,11 @@ const mongoose = require("mongoose");
 
 const carSchema = new mongoose.Schema({
     brand: String,
-    colorName: String, // name of the color
+    colorName: String, 
     price: Number,
-    isTuned: Boolean, // is it tuned
+    isTuned: Boolean, 
 });
 
-const Car = mongoose.model("Car", carSchema); // create model
+const Car = mongoose.model("Car", carSchema); 
 
 module.exports = Car;
