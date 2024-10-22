@@ -51,6 +51,8 @@ form {
 
 label {
   margin: 10px 0 5px;
+  color: black;
+  font-size: large;
 }
 
 input[type="text"],
@@ -114,7 +116,7 @@ border-radius: 15px;
   font-size: large;
   cursor: pointer;
   color: red;
-  
+   
 
 }
 .collection{
