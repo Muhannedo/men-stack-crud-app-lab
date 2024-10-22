@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: beige;
+  color: beige;
   margin: 0;
   padding: 0;
 }
@@ -93,7 +93,6 @@ li {
   text-align: center;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 10px;
@@ -108,4 +107,26 @@ width: 450px;
 height: 450px;
 align-items: center;
 border-radius: 15px;
+-webkit-box-reflect: right;
+}
+.BrowseButton:hover{
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+  color: red;
+  
+
+}
+.collection{
+text-align: center;
+color: black;
+font-size: x-large;
+font-style: inherit;
+font-display: fallback;
+
+}
+.BrowseButton{
+  text-align: center;
+  align-content: center;
+  font-size: xx-large;
 }
